@@ -2,7 +2,15 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-1.1.5 (2025-10-09)
+
+### Bug Fixes
+
+-  spotless ([98a4c](https://github.com/Forsakringskassan/fk-maven/commit/98a4cf9fdb2be43) Tomas Bjerre)  
+
 ## fk-maven-parent-1.1.4 (2025-10-09)
+
+## 1.1.4 (2025-10-09)
 
 ### Bug Fixes
 
