@@ -72,6 +72,7 @@
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
+    <fk-maven-parent.version>${project.version}</fk-maven-parent.version>
   </properties>
 
   <dependencies>
@@ -177,7 +178,7 @@
           <java>
             <eclipse>
               <version>4.26</version>
-              <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
+                <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
             </eclipse>
           </java>
         </configuration>
