@@ -174,10 +174,12 @@
         <artifactId>spotless-maven-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <eclipse>
-            <version>4.26</version>
-            <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
-          </eclipse>
+          <java>
+            <eclipse>
+              <version>4.26</version>
+              <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
+            </eclipse>
+          </java>
         </configuration>
       </plugin>
       <plugin>
