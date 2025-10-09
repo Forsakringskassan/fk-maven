@@ -37,7 +37,7 @@
 
   <distributionManagement>
     <repository>
-      <id>github--Forsakringskassan</id>
+      <id>github--Forsakringskassan--fk-maven</id>
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/Forsakringskassan/fk-maven</url>
     </repository>
