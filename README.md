@@ -2,6 +2,10 @@
 
 Common Maven stuff.
 
+## Example usage
+
+Quarkus application: https://github.com/Forsakringskassan/template-quarkus
+
 ## Setup
 
 This is published on Github Packages and you need Github credentials to download it.
@@ -40,6 +44,8 @@ And in `pom.xml`:
     </repository>
   </repositories>
 ```
+
+Many repositories can have same ID. And every repository with that same ID can share same credentials from `settings.xml`.
 
 And also the actual dependency:
 
