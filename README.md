@@ -22,7 +22,7 @@ A user may create a `settings.xml` like:
                               http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>github--Forsakringskassan--fk-maven</id>
+      <id>github--Forsakringskassan</id>
       <username>${env.GITHUB_ACTOR}</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
@@ -35,7 +35,7 @@ And in `pom.xml`:
 ```xml
   <repositories>
     <repository>
-      <id>github--Forsakringskassan--fk-maven</id>
+      <id>github--Forsakringskassan</id>
       <url>https://maven.pkg.github.com/Forsakringskassan/fk-maven</url>
     </repository>
   </repositories>
