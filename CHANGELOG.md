@@ -2,7 +2,27 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-1.2.2 (2025-10-09)
+
+### Dependency updates
+
+- fk-code-standard 1.0.6 ([cfcda](https://github.com/Forsakringskassan/fk-maven/commit/cfcdae1ac28d914) Tomas Bjerre)  
+## fk-maven-parent-1.2.1 (2025-10-09)
+
+### Bug Fixes
+
+-  fix release ([cd78e](https://github.com/Forsakringskassan/fk-maven/commit/cd78e3fd6f998fd) Tomas Bjerre)  
+
+## fk-maven-parent-1.2.0 (2025-10-09)
+
+### Features
+
+-  formatting ([fd014](https://github.com/Forsakringskassan/fk-maven/commit/fd01430f963b069) Tomas Bjerre)  
+-  fk-code-standard-java ([4c32b](https://github.com/Forsakringskassan/fk-maven/commit/4c32b35efb64afc) Tomas Bjerre)  
+
 ## fk-maven-parent-1.1.6 (2025-10-09)
+
+## 1.1.6 (2025-10-09)
 
 ### Bug Fixes
 
