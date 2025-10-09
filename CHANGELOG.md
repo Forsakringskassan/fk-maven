@@ -2,6 +2,12 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-1.1.3 (2025-10-09)
+
+### Bug Fixes
+
+-  trigger version ([69bbe](https://github.com/Forsakringskassan/fk-maven/commit/69bbe0a353be747) Tomas Bjerre)  
+
 ## fk-maven-parent-1.1.2 (2025-10-09)
 
 ## fk-maven-parent-1.1.1 (2025-10-09)
