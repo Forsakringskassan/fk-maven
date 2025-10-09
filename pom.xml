@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.fk.maven</groupId>
   <artifactId>fk-maven-parent</artifactId>
-  <version>1.1.4-SNAPSHOT</version>
+  <version>1.1.4</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
   <description>My Maven.</description>
@@ -30,7 +31,7 @@
   <scm>
     <connection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</connection>
     <developerConnection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</developerConnection>
-    <tag>fk-maven-parent-1.0.1</tag>
+    <tag>fk-maven-parent-1.1.4</tag>
     <url>https://github.com/Forsakringskassan/fk-maven</url>
   </scm>
 
@@ -177,7 +178,7 @@
           <java>
             <eclipse>
               <version>4.26</version>
-                <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
+              <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
             </eclipse>
           </java>
         </configuration>
