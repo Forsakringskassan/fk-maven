@@ -1,6 +1,31 @@
 # FK Maven
 
-Common Maven stuff.
+A Maven parent pom. Some of the features it provides:
+
+- **Code Quality & Static Analysis**
+  - **SpotBugs** - Static analysis for bug detection
+  - **PMD** - Source code analyzer for programming flaws
+  - **Checkstyle** - Code style checker
+  - **Violations Plugin** - Aggregated violation reporting
+  - **FK Code Standard** - Forsakringskassan's code formatting standards
+
+- **Development Tools**
+  - **Eclipse Integration** - IDE configuration with source/javadoc downloads
+  - **UTF-8 Encoding** - Consistent character encoding across all phases
+  - **Java 21** - Modern Java version support
+  - **Parameter Names** - Preserved for better debugging
+
+- **Build & Release Management**
+  - **Maven Surefire** - Unit test execution
+  - **Javadoc Generation** - Automatic API documentation
+  - **Source JAR Creation** - Source code packaging
+  - **Maven Release Plugin** - Automated versioning and releases
+  - **SortPOM** - Consistent POM formatting
+
+- **Pre-configured Dependencies**
+  - **AssertJ** - Fluent assertions for testing
+  - **SpotBugs Annotations** - Static analysis annotations
+
 
 ## Example usage
 
