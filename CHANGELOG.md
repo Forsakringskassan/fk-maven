@@ -2,7 +2,36 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-1.1.1 (2025-10-09)
+
+### Bug Fixes
+
+-  java formatting ([b783e](https://github.com/Forsakringskassan/fk-maven/commit/b783e757e81c77c) Tomas Bjerre)  
+
+### Other changes
+
+**[maven-release-plugin] prepare release fk-maven-parent-1.1.1**
+
+
+[2d770](https://github.com/Forsakringskassan/fk-maven/commit/2d770357c408ff2) Github Actions *2025-10-09 12:59:28*
+
+**[maven-release-plugin] prepare for next development iteration**
+
+
+[1e3ff](https://github.com/Forsakringskassan/fk-maven/commit/1e3ff2fc176393a) Github Actions *2025-10-09 12:46:52*
+
+
 ## fk-maven-parent-1.1.0 (2025-10-09)
+
+### Other changes
+
+**[maven-release-plugin] prepare release fk-maven-parent-1.1.0**
+
+
+[24108](https://github.com/Forsakringskassan/fk-maven/commit/241084f41da7585) Github Actions *2025-10-09 12:46:51*
+
+
+## 1.1.0 (2025-10-09)
 
 ### Features
 
@@ -13,11 +42,6 @@ Changelog of fk-maven.
 -  trying to fix release ([dc7e5](https://github.com/Forsakringskassan/fk-maven/commit/dc7e50d44ee9e5e) Tomas Bjerre)  
 
 ### Other changes
-
-**[maven-release-plugin] prepare release fk-maven-parent-1.1.0**
-
-
-[24108](https://github.com/Forsakringskassan/fk-maven/commit/241084f41da7585) Github Actions *2025-10-09 12:46:51*
 
 **[maven-release-plugin] prepare release fk-maven-parent-1.0.1**
 
