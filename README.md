@@ -42,4 +42,14 @@ And in `pom.xml`:
   </distributionManagement>
 ```
 
+And also the actual dependency:
+
+```xml
+<parent>
+  <groupId>se.fk.maven</groupId>
+  <artifactId>fk-maven-parent</artifactId>
+  <version>1.1.0</version>
+</parent>
+```
+
 And build it with `./mvnw -s settings.xml verify`.
