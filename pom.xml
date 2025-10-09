@@ -72,7 +72,7 @@
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
-    <fk-code-standard.version>1.0.4</fk-code-standard.version>
+    <fk-code-standard.version>1.0.6</fk-code-standard.version>
   </properties>
 
   <dependencies>
