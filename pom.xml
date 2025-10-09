@@ -72,7 +72,7 @@
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
-    <fk-code-standard.version>1.0.2-SNAPSHOT</fk-code-standard.version>
+    <fk-code-standard.version>1.0.4</fk-code-standard.version>
   </properties>
 
   <dependencies>
@@ -95,11 +95,14 @@
       <id>central</id>
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
-    <repository>
-      <id>github--Forsakringskassan</id>
-      <url>https://maven.pkg.github.com/Forsakringskassan/fk-code-standard-java</url>
-    </repository>
   </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>github--Forsakringskassan--fk-code-standard-java</id>
+      <url>https://maven.pkg.github.com/Forsakringskassan/fk-code-standard-java</url>
+    </pluginRepository>
+  </pluginRepositories>
 
   <build>
     <plugins>
