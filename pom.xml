@@ -29,9 +29,10 @@
   </developers>
 
   <scm>
-    <developerConnection>scm:git:git@github.com:Forsakringskassan/fk-maven.git</developerConnection>
-    <tag>HEAD</tag>
+    <developerConnection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</developerConnection>
+    <connection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</connection>
     <url>https://github.com/Forsakringskassan/fk-maven</url>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
