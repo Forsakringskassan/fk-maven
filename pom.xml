@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                               http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.fk.maven</groupId>
   <artifactId>fk-maven-parent</artifactId>
-  <version>1.1.5-SNAPSHOT</version>
+  <version>1.1.5</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
   <description>FK Maven Parent POM</description>
@@ -30,6 +31,7 @@
   <scm>
     <connection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</connection>
     <developerConnection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</developerConnection>
+    <tag>fk-maven-parent-1.1.5</tag>
     <url>https://github.com/Forsakringskassan/fk-maven</url>
   </scm>
 
@@ -101,7 +103,9 @@
         </configuration>
         <executions>
           <execution>
-            <goals><goal>sort</goal></goals>
+            <goals>
+              <goal>sort</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
@@ -138,7 +142,9 @@
         <executions>
           <execution>
             <id>attach-javadocs</id>
-            <goals><goal>jar</goal></goals>
+            <goals>
+              <goal>jar</goal>
+            </goals>
             <phase>verify</phase>
           </execution>
         </executions>
@@ -149,11 +155,15 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>${source.plugin.version}</version>
-        <configuration><attach>true</attach></configuration>
+        <configuration>
+          <attach>true</attach>
+        </configuration>
         <executions>
           <execution>
             <id>attach-sources</id>
-            <goals><goal>jar-no-fork</goal></goals>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
             <phase>verify</phase>
           </execution>
         </executions>
@@ -181,7 +191,9 @@
         <executions>
           <execution>
             <id>package-formatter-jar</id>
-            <goals><goal>jar</goal></goals>
+            <goals>
+              <goal>jar</goal>
+            </goals>
             <phase>package</phase>
             <configuration>
               <classesDirectory>${project.basedir}</classesDirectory>
@@ -221,7 +233,9 @@
         <executions>
           <execution>
             <id>spotbugs</id>
-            <goals><goal>check</goal></goals>
+            <goals>
+              <goal>check</goal>
+            </goals>
             <phase>verify</phase>
           </execution>
         </executions>
@@ -232,7 +246,9 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>${pmd.version}</version>
-        <configuration><failOnViolation>false</failOnViolation></configuration>
+        <configuration>
+          <failOnViolation>false</failOnViolation>
+        </configuration>
       </plugin>
 
       <!-- Checkstyle -->
@@ -253,7 +269,9 @@
         <version>${violations.version}</version>
         <executions>
           <execution>
-            <goals><goal>violations</goal></goals>
+            <goals>
+              <goal>violations</goal>
+            </goals>
             <phase>verify</phase>
             <configuration>
               <minSeverity>INFO</minSeverity>
