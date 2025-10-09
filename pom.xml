@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>se.bjurr.maven</groupId>
-  <artifactId>bjurr-maven-parent</artifactId>
-  <version>1.1.9-SNAPSHOT</version>
+  <groupId>se.fk.maven</groupId>
+  <artifactId>fk-maven-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Bjurr Maven</name>
+  <name>FK Maven</name>
   <description>My Maven.</description>
-  <url>https://github.com/tomasbjerre/bjurr-maven</url>
+  <url>https://github.com/Forsakringskassan/fk-maven</url>
   <inceptionYear>2025</inceptionYear>
 
   <licenses>
@@ -27,20 +28,17 @@
     </developer>
   </developers>
 
-  <modules>
-    <module>bjurr-maven-plugin-parent</module>
-  </modules>
-
   <scm>
-    <developerConnection>scm:git:git@github.com:tomasbjerre/bjurr-maven.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:Forsakringskassan/fk-maven.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/tomasbjerre/bjurr-maven</url>
+    <url>https://github.com/Forsakringskassan/fk-maven</url>
   </scm>
 
   <distributionManagement>
     <repository>
-      <id>ossrh</id>
-      <url>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/</url>
+      <id>github--Forsakringskassan--fk-maven</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/Forsakringskassan/fk-maven</url>
     </repository>
   </distributionManagement>
 
@@ -183,16 +181,15 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>com.spotify.fmt</groupId>
-        <artifactId>fmt-maven-plugin</artifactId>
-        <version>${fmt.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>format</goal>
-            </goals>
-          </execution>
-        </executions>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <eclipse>
+            <version>4.26</version>
+            <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
+          </eclipse>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>com.github.spotbugs</groupId>
