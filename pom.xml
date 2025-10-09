@@ -47,8 +47,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>11</maven.compiler.target>
-    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.parameters>true</maven.compiler.parameters>
 
     <!-- Dependency Versions -->
@@ -69,7 +69,6 @@
     <pmd.version>3.27.0</pmd.version>
     <checkstyle.version>3.6.0</checkstyle.version>
     <violations.version>3.0.0</violations.version>
-    <gpg.version>3.0.1</gpg.version>
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
@@ -164,21 +163,10 @@
         <version>${release.plugin.version}</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          <releaseProfiles>release-sign-artifacts</releaseProfiles>
           <goals>deploy</goals>
           <checkModificationExcludes>
             <checkModificationExclude>pom.xml</checkModificationExclude>
           </checkModificationExcludes>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.central</groupId>
-        <artifactId>central-publishing-maven-plugin</artifactId>
-        <version>${central.publishing.version}</version>
-        <extensions>true</extensions>
-        <configuration>
-          <publishingServerId>ossrh</publishingServerId>
-          <autoPublish>true</autoPublish>
         </configuration>
       </plugin>
       <plugin>
@@ -274,28 +262,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <profiles>
-    <profile>
-      <id>release-sign-artifacts</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>${gpg.version}</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-                <phase>verify</phase>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>
