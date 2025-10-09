@@ -48,7 +48,7 @@ And also the actual dependency:
 <parent>
   <groupId>se.fk.maven</groupId>
   <artifactId>fk-maven-parent</artifactId>
-  <version>1.1.0</version>
+  <version>a.b.c</version>
 </parent>
 ```
 
