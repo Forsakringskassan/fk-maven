@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.fk.maven</groupId>
@@ -7,7 +10,7 @@
   <version>1.1.5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
-  <description>My Maven.</description>
+  <description>FK Maven Parent POM</description>
   <url>https://github.com/Forsakringskassan/fk-maven</url>
   <inceptionYear>2025</inceptionYear>
 
@@ -31,7 +34,6 @@
   <scm>
     <connection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</connection>
     <developerConnection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</developerConnection>
-    <tag>fk-maven-parent-1.0.1</tag>
     <url>https://github.com/Forsakringskassan/fk-maven</url>
   </scm>
 
@@ -47,8 +49,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.parameters>true</maven.compiler.parameters>
 
     <!-- Dependency Versions -->
@@ -92,6 +94,8 @@
 
   <build>
     <plugins>
+
+      <!-- Sortpom -->
       <plugin>
         <groupId>com.github.ekryd.sortpom</groupId>
         <artifactId>sortpom-maven-plugin</artifactId>
@@ -101,17 +105,19 @@
         </configuration>
         <executions>
           <execution>
-            <goals>
-              <goal>sort</goal>
-            </goals>
+            <goals><goal>sort</goal></goals>
           </execution>
         </executions>
       </plugin>
+
+      <!-- Surefire -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${surefire.version}</version>
       </plugin>
+
+      <!-- Eclipse -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
@@ -121,6 +127,8 @@
           <downloadJavadocs>true</downloadJavadocs>
         </configuration>
       </plugin>
+
+      <!-- Javadoc -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -134,30 +142,28 @@
         <executions>
           <execution>
             <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
+            <goals><goal>jar</goal></goals>
             <phase>verify</phase>
           </execution>
         </executions>
       </plugin>
+
+      <!-- Source -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>${source.plugin.version}</version>
-        <configuration>
-          <attach>true</attach>
-        </configuration>
+        <configuration><attach>true</attach></configuration>
         <executions>
           <execution>
             <id>attach-sources</id>
-            <goals>
-              <goal>jar-no-fork</goal>
-            </goals>
+            <goals><goal>jar-no-fork</goal></goals>
             <phase>verify</phase>
           </execution>
         </executions>
       </plugin>
+
+      <!-- Release -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
@@ -170,6 +176,29 @@
           </checkModificationExcludes>
         </configuration>
       </plugin>
+
+      <!-- Formatter JAR -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <executions>
+          <execution>
+            <id>package-formatter-jar</id>
+            <goals><goal>jar</goal></goals>
+            <phase>package</phase>
+            <configuration>
+              <classesDirectory>${project.basedir}</classesDirectory>
+              <includes>
+                <include>eclipse/eclipse-formatter.xml</include>
+              </includes>
+              <classifier>formatter</classifier>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Spotless -->
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
@@ -178,11 +207,13 @@
           <java>
             <eclipse>
               <version>4.26</version>
-              <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}.jar!/eclipse/eclipse-formatter.xml</file>
+              <file>${settings.localRepository}/se/fk/maven/fk-maven-parent/${fk-maven-parent.version}/fk-maven-parent-${fk-maven-parent.version}-formatter.jar!/eclipse/eclipse-formatter.xml</file>
             </eclipse>
           </java>
         </configuration>
       </plugin>
+
+      <!-- SpotBugs -->
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
@@ -194,21 +225,21 @@
         <executions>
           <execution>
             <id>spotbugs</id>
-            <goals>
-              <goal>check</goal>
-            </goals>
+            <goals><goal>check</goal></goals>
             <phase>verify</phase>
           </execution>
         </executions>
       </plugin>
+
+      <!-- PMD -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>${pmd.version}</version>
-        <configuration>
-          <failOnViolation>false</failOnViolation>
-        </configuration>
+        <configuration><failOnViolation>false</failOnViolation></configuration>
       </plugin>
+
+      <!-- Checkstyle -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -218,15 +249,15 @@
           <failsOnError>false</failsOnError>
         </configuration>
       </plugin>
+
+      <!-- Violations -->
       <plugin>
         <groupId>se.bjurr.violations</groupId>
         <artifactId>violations-maven-plugin</artifactId>
         <version>${violations.version}</version>
         <executions>
           <execution>
-            <goals>
-              <goal>violations</goal>
-            </goals>
+            <goals><goal>violations</goal></goals>
             <phase>verify</phase>
             <configuration>
               <minSeverity>INFO</minSeverity>

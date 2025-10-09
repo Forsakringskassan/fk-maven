@@ -33,13 +33,12 @@ A user may create a `settings.xml` like:
 And in `pom.xml`:
 
 ```xml
-  <distributionManagement>
+  <repositories>
     <repository>
       <id>github--Forsakringskassan--fk-maven</id>
-      <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/Forsakringskassan/fk-maven</url>
     </repository>
-  </distributionManagement>
+  </repositories>
 ```
 
 And also the actual dependency:
