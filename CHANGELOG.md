@@ -2,7 +2,27 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-1.5.0 (2025-10-10)
+
+### Features
+
+-  publicerar till gemensamt repository ([292dc](https://github.com/Forsakringskassan/fk-maven/commit/292dc5c5744d5e2) Tomas Bjerre)  
+
+## 1.4.1 (2025-10-10)
+
+### Bug Fixes
+
+-  trigger version ([8dfac](https://github.com/Forsakringskassan/fk-maven/commit/8dfac9b898944b3) Tomas Bjerre)  
+
+## 1.4.0 (2025-10-10)
+
+### Features
+
+-  trying to published to shared repository ([67e64](https://github.com/Forsakringskassan/fk-maven/commit/67e64640633ca54) Tomas Bjerre)  
+
 ## fk-maven-parent-1.2.2 (2025-10-09)
+
+## 1.2.2 (2025-10-09)
 
 ### Dependency updates
 
