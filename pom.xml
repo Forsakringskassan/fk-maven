@@ -4,7 +4,7 @@
 
   <groupId>se.fk.maven</groupId>
   <artifactId>fk-maven-parent</artifactId>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>1.4.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
   <description>FK Maven Parent POM</description>
@@ -37,9 +37,9 @@
 
   <distributionManagement>
     <repository>
-      <id>github--Forsakringskassan--fk-maven</id>
+      <id>github--Forsakringskassan--repository</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/Forsakringskassan/fk-maven</url>
+      <url>https://maven.pkg.github.com/Forsakringskassan/repository</url>
     </repository>
   </distributionManagement>
 
