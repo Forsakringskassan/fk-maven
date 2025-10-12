@@ -2,7 +2,15 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-parent-1.6.1 (2025-10-12)
+
+### Bug Fixes
+
+-  wrong group ([1707b](https://github.com/Forsakringskassan/fk-maven/commit/1707b8e5493fd2f) Tomas Bjerre)  
+
 ## fk-maven-parent-parent-1.6.0 (2025-10-12)
+
+## 1.6.0 (2025-10-12)
 
 ### Features
 
