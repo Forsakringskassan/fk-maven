@@ -2,7 +2,18 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-parent-1.6.0 (2025-10-12)
+
+### Features
+
+-  use Spotless plugin with code standard from jar ([8c4b4](https://github.com/Forsakringskassan/fk-maven/commit/8c4b4e86bfcc6f2) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency org.apache.maven.plugins:maven-pmd-plugin to v3.28.0 ([ca720](https://github.com/Forsakringskassan/fk-maven/commit/ca7205a4f40dd4d) renovate[bot])  
 ## fk-maven-parent-1.5.0 (2025-10-10)
+
+## 1.5.0 (2025-10-10)
 
 ### Features
 
