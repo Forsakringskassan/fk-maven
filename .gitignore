@@ -20,4 +20,6 @@ build
 .idea/
 *iml
 */CHANGELOG.md
-
+examples/*/.mvn
+examples/*/mvn*
+examples/*/settings.xml

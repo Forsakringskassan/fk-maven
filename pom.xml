@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.fk.maven</groupId>
-  <artifactId>fk-maven-parent</artifactId>
+  <artifactId>fk-maven-parent-parent</artifactId>
   <version>1.5.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
@@ -27,6 +27,11 @@
       <url>https://github.com/tomasbjerre</url>
     </developer>
   </developers>
+
+  <modules>
+    <module>fk-code-standard-java</module>
+    <module>fk-maven-parent</module>
+  </modules>
 
   <scm>
     <connection>scm:git:https://github.com/Forsakringskassan/fk-maven.git</connection>
@@ -69,7 +74,6 @@
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
-    <fk-code-standard.version>1.1.0</fk-code-standard.version>
   </properties>
 
   <dependencies>
@@ -196,20 +200,6 @@
             <checkModificationExclude>pom.xml</checkModificationExclude>
           </checkModificationExcludes>
         </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>se.fk.codestandard</groupId>
-        <artifactId>fk-code-standard-maven-plugin</artifactId>
-        <version>${fk-code-standard.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>spotlessCheck</goal>
-              <goal>spotlessApply</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
 
       <!-- SpotBugs -->
