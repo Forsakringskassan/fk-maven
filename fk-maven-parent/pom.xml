@@ -29,7 +29,7 @@
         </configuration>
         <dependencies>
           <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>se.fk.maven</groupId>
             <artifactId>fk-code-standard-java</artifactId>
             <version>1.6.1-SNAPSHOT</version>
           </dependency>
