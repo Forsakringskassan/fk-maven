@@ -2,6 +2,8 @@
 
 Changelog of fk-maven.
 
+## fk-maven-parent-parent-1.6.3 (2025-10-19)
+
 ## 1.6.2 (2025-10-19)
 
 ### Dependency updates
