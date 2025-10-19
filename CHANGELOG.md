@@ -2,7 +2,12 @@
 
 Changelog of fk-maven.
 
-## fk-maven-parent-parent-1.6.1 (2025-10-12)
+## 1.6.2 (2025-10-19)
+
+### Dependency updates
+
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v2.46.1 ([1b292](https://github.com/Forsakringskassan/fk-maven/commit/1b2923c98ee87c0) renovate[bot])  
+## 1.6.1 (2025-10-12)
 
 ### Bug Fixes
 
