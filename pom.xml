@@ -4,7 +4,7 @@
 
   <groupId>se.fk.maven</groupId>
   <artifactId>fk-maven-parent-parent</artifactId>
-  <version>1.6.2-SNAPSHOT</version>
+  <version>1.6.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>FK Maven</name>
   <description>FK Maven Parent POM</description>
