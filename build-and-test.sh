@@ -10,7 +10,7 @@ find . -name target | xargs rm -rf
 parentVersion=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
 
 subprojects=(
-"test-example|./mvnw -s settings.xml spotless:apply"
+"test-example|./mvnw -s settings.xml initialize spotless:apply"
 )
 
 run_subproject() {

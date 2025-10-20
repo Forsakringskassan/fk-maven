@@ -4,17 +4,11 @@ on: [workflow_dispatch, workflow_call, push, pull_request]
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     permissions:
       security-events: write
       actions: read
       contents: read
-    strategy:
-      fail-fast: true
-      matrix:
-        java: [ '21' ]
-        os: [ 'ubuntu-latest' ]
-    name: Java ${{ matrix.Java }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -23,7 +17,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'zulu'
-          java-version: ${{ matrix.java }}
+          java-version: '21'
           cache: maven
       - name: "Build and test"
         shell: bash

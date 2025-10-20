@@ -13,8 +13,52 @@
   <name>fk-maven-parent</name>
   <description>fk-maven-parent.</description>
 
+  <properties>
+    <fk-code-standard-java.version>1.6.4-SNAPSHOT</fk-code-standard-java.version>
+    <code-standard.directory>${project.build.directory}/code-standard</code-standard.directory>
+    <code-standard.file>code-standard-java-eclipse.xml</code-standard.file>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>se.fk.maven</groupId>
+      <artifactId>fk-code-standard-java</artifactId>
+      <version>${fk-code-standard-java.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
+      <!-- Dependency Plugin to Extract Formatter Config -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.8.1</version>
+        <executions>
+          <execution>
+            <id>unpack-code-standard</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>initialize</phase>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>se.fk.maven</groupId>
+                  <artifactId>fk-code-standard-java</artifactId>
+                  <version>${fk-code-standard-java.version}</version>
+                  <type>jar</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${code-standard.directory}</outputDirectory>
+                  <includes>${code-standard.file}</includes>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Spotless -->
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
@@ -23,17 +67,10 @@
         <configuration>
           <java>
             <eclipse>
-              <file>code-standard-java-eclipse.xml</file>
+              <file>${code-standard.directory}/${code-standard.file}</file>
             </eclipse>
           </java>
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>se.fk.maven</groupId>
-            <artifactId>fk-code-standard-java</artifactId>
-            <version>1.6.4-SNAPSHOT</version>
-          </dependency>
-        </dependencies>
         <executions>
           <execution>
             <id>spotless-check</id>
