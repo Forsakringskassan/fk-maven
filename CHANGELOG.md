@@ -2,6 +2,24 @@
 
 Changelog of fk-maven.
 
+## 1.6.5 (2025-10-20)
+
+### Bug Fixes
+
+-  refactoring formatting ([abefa](https://github.com/Forsakringskassan/fk-maven/commit/abefa03ad10cfae) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3 ([33039](https://github.com/Forsakringskassan/fk-maven/commit/3303991b5190bc5) renovate[bot])  
+### Other changes
+
+**Merge pull request #2 from Forsakringskassan/renovate/com.diffplug.spotless-spotless-maven-plugin-3.x**
+
+* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v3 
+
+[cdf07](https://github.com/Forsakringskassan/fk-maven/commit/cdf073d934cd4c5) Tomas Bjerre *2025-10-20 08:28:03*
+
+
 ## 1.6.4 (2025-10-19)
 
 ### Bug Fixes
