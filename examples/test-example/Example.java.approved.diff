@@ -1,0 +1,16 @@
+diff --git a/examples/test-example/src/main/java/example/Example.java b/examples/test-example/src/main/java/example/Example.java
+index 3f7ae29..d6d5513 100644
+--- a/examples/test-example/src/main/java/example/Example.java
++++ b/examples/test-example/src/main/java/example/Example.java
+@@ -8,8 +8,9 @@ public class Example
+    }
+ 
+    // This method is not formatted
+-   public void method() {
++   public void method()
++   {
+       // This should be formatted
+-          System.out.println("Hello!");
++      System.out.println("Hello!");
+    }
+ }
