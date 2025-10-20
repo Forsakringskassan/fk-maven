@@ -14,7 +14,6 @@
   <description>fk-maven-parent.</description>
 
   <properties>
-    <fk-code-standard-java.version>1.6.4-SNAPSHOT</fk-code-standard-java.version>
     <code-standard.directory>${project.build.directory}/code-standard</code-standard.directory>
     <code-standard.file>code-standard-java-eclipse.xml</code-standard.file>
   </properties>
@@ -23,7 +22,7 @@
     <dependency>
       <groupId>se.fk.maven</groupId>
       <artifactId>fk-code-standard-java</artifactId>
-      <version>${fk-code-standard-java.version}</version>
+      <version>${project.parent.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -47,7 +46,7 @@
                 <artifactItem>
                   <groupId>se.fk.maven</groupId>
                   <artifactId>fk-code-standard-java</artifactId>
-                  <version>${fk-code-standard-java.version}</version>
+                  <version>${project.parent.version}</version>
                   <type>jar</type>
                   <overWrite>true</overWrite>
                   <outputDirectory>${code-standard.directory}</outputDirectory>
