@@ -157,6 +157,10 @@
           <charset>UTF-8</charset>
           <failOnError>false</failOnError>
           <failOnWarnings>false</failOnWarnings>
+          <quiet>true</quiet>
+          <additionalJOptions>
+            <additionalJOption>-Xdoclint:none</additionalJOption>
+          </additionalJOptions>
         </configuration>
         <executions>
           <execution>
