@@ -2,6 +2,20 @@
 
 Changelog of fk-maven.
 
+## 1.7.0 (2025-10-21)
+
+### Features
+
+-  -Xdoclint:none ([52cac](https://github.com/Forsakringskassan/fk-maven/commit/52cacf57a1abe23) Bjerre Tomas (66128244))  
+
+### Bug Fixes
+
+-  **deps**  update dependency com.github.spotbugs:spotbugs-annotations to v4.9.7 (#4) ([69695](https://github.com/Forsakringskassan/fk-maven/commit/6969533fd5a730d) renovate[bot])  
+
+### Dependency updates
+
+- update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.9.0 ([071d1](https://github.com/Forsakringskassan/fk-maven/commit/071d1d49204bf7f) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.9.7.0 (#3) ([47293](https://github.com/Forsakringskassan/fk-maven/commit/4729366a078437a) renovate[bot])  
 ## 1.6.6 (2025-10-20)
 
 ### Bug Fixes
