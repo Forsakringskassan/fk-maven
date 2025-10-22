@@ -58,7 +58,7 @@
 
     <!-- Dependency Versions -->
     <assertj.version>3.27.6</assertj.version>
-    <spotbugs.annotations.version>4.9.7</spotbugs.annotations.version>
+    <spotbugs.annotations.version>4.9.8</spotbugs.annotations.version>
 
     <!-- Plugin Versions -->
     <sortpom.version>4.0.0</sortpom.version>
