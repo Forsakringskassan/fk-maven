@@ -2,6 +2,12 @@
 
 Changelog of fk-maven.
 
+## 1.9.1 (2025-10-23)
+
+### Bug Fixes
+
+-  adding missing maven-failsafe-plugin version ([65e16](https://github.com/Forsakringskassan/fk-maven/commit/65e16e022903665) Tomas Bjerre)  
+
 ## 1.9.0 (2025-10-23)
 
 ### Features
