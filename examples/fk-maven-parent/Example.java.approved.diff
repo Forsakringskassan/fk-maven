@@ -1,7 +1,7 @@
-diff --git a/examples/test-example/src/main/java/example/Example.java b/examples/test-example/src/main/java/example/Example.java
+diff --git a/examples/fk-maven-parent/src/main/java/example/Example.java b/examples/fk-maven-parent/src/main/java/example/Example.java
 index 3f7ae29..d6d5513 100644
---- a/examples/test-example/src/main/java/example/Example.java
-+++ b/examples/test-example/src/main/java/example/Example.java
+--- a/examples/fk-maven-parent/src/main/java/example/Example.java
++++ b/examples/fk-maven-parent/src/main/java/example/Example.java
 @@ -8,8 +8,9 @@ public class Example
     }
  
