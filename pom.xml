@@ -31,6 +31,7 @@
   <modules>
     <module>fk-code-standard-java</module>
     <module>fk-maven-parent</module>
+    <module>fk-maven-quarkus-parent</module>
   </modules>
 
   <scm>
