@@ -147,6 +147,7 @@
       <!-- Failsafe Plugin -->
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
+        <version>${surefire.version}</version>
         <configuration>
           <systemPropertyVariables>
             <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
