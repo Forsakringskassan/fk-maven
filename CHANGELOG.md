@@ -2,6 +2,12 @@
 
 Changelog of fk-maven.
 
+## 1.8.1 (2025-10-23)
+
+### Bug Fixes
+
+-  tar bort varning om org.osgi.annotation.bundle.Requirement ([202b3](https://github.com/Forsakringskassan/fk-maven/commit/202b3bf777e656d) Tomas Bjerre)  
+
 ## 1.8.0 (2025-10-23)
 
 ### Features
