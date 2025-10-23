@@ -2,6 +2,22 @@
 
 Changelog of fk-maven.
 
+## 1.8.0 (2025-10-23)
+
+### Features
+
+-  fk-maven-quarkus-parent ([6441a](https://github.com/Forsakringskassan/fk-maven/commit/6441a7f250b7766) Tomas Bjerre)  
+
+### Bug Fixes
+
+-  **deps**  update dependency com.github.spotbugs:spotbugs-annotations to v4.9.8 ([19b2b](https://github.com/Forsakringskassan/fk-maven/commit/19b2b1646e43c16) renovate[bot])  
+
+### Dependency updates
+
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.9.8.1 ([e9456](https://github.com/Forsakringskassan/fk-maven/commit/e9456aca4f6e995) renovate[bot])  
+- update dependency org.assertj:assertj-core to v3.27.6 ([3ff31](https://github.com/Forsakringskassan/fk-maven/commit/3ff31c90f3d4df1) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.9.8.0 ([3118c](https://github.com/Forsakringskassan/fk-maven/commit/3118c0ac27b7267) renovate[bot])  
+- update dependency maven-wrapper to v3.3.4 ([dd5cf](https://github.com/Forsakringskassan/fk-maven/commit/dd5cf8a5f4e828f) renovate[bot])  
 ## 1.7.0 (2025-10-21)
 
 ### Features
