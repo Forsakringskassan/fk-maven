@@ -48,6 +48,12 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-jackson</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.annotation.bundle</artifactId>
+      <version>1.0.0</version>
+      <scope>provided</scope>
+    </dependency>
 
     <!-- Immutables -->
     <dependency>
