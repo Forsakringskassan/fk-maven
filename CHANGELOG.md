@@ -2,6 +2,12 @@
 
 Changelog of fk-maven.
 
+## 1.9.0 (2025-10-23)
+
+### Features
+
+-  quarkus container och smallrey openapi ([af4a5](https://github.com/Forsakringskassan/fk-maven/commit/af4a5b7235ae356) Tomas Bjerre)  
+
 ## 1.8.1 (2025-10-23)
 
 ### Bug Fixes
