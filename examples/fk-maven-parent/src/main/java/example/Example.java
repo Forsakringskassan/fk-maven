@@ -8,8 +8,9 @@ public class Example
    }
 
    // This method is not formatted
-   public void method() {
+   public void method()
+   {
       // This should be formatted
-          System.out.println("Hello!");
+      System.out.println("Hello!");
    }
 }

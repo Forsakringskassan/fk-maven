@@ -10,7 +10,8 @@ find . -name target | xargs rm -rf
 parentVersion=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
 
 subprojects=(
-"test-example|./mvnw -s settings.xml initialize spotless:apply"
+"fk-maven-parent|./mvnw -s settings.xml initialize spotless:apply"
+"fk-maven-quarkus-parent|./mvnw -s settings.xml initialize spotless:apply"
 )
 
 run_subproject() {
@@ -53,8 +54,8 @@ done
 git diff | cat
 
 # Define the test file and approved diff file
-test_file="examples/test-example/src/main/java/example/Example.java"
-approved_diff_file="examples/test-example/Example.java.approved.diff"
+test_file="examples/fk-maven-parent/src/main/java/example/Example.java"
+approved_diff_file="examples/fk-maven-parent/Example.java.approved.diff"
 
 # Generate the current diff
 current_diff=$(git diff "$test_file")

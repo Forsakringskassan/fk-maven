@@ -88,4 +88,14 @@ And also the actual dependency:
 </parent>
 ```
 
+Or if Quarkus:
+
+```xml
+<parent>
+  <groupId>se.fk.maven</groupId>
+  <artifactId>fk-maven-quarkus-parent</artifactId>
+  <version>a.b.c</version>
+</parent>
+```
+
 And build it with `./mvnw -s settings.xml verify`.
