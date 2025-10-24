@@ -71,7 +71,7 @@
     <spotbugs.version>4.9.8.1</spotbugs.version>
     <pmd.version>3.28.0</pmd.version>
     <checkstyle.version>3.6.0</checkstyle.version>
-    <violations.version>3.0.0</violations.version>
+    <violations.version>3.1.1</violations.version>
 
     <!-- Other Properties -->
     <violations.maxViolations>0</violations.maxViolations>
