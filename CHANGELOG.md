@@ -2,6 +2,15 @@
 
 Changelog of fk-maven.
 
+## 1.10.1 (2025-10-24)
+
+### Bug Fixes
+
+-  breadcrumb -> breadcrumbid ([b23ec](https://github.com/Forsakringskassan/fk-maven/commit/b23ec93f5e414f7) Tomas Bjerre)  
+
+### Dependency updates
+
+- update dependency se.bjurr.violations:violations-maven-plugin to v3.1.2 ([c725d](https://github.com/Forsakringskassan/fk-maven/commit/c725d443c2ae360) renovate[bot])  
 ## 1.10.0 (2025-10-24)
 
 ### Features
