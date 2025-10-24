@@ -67,7 +67,7 @@
     <dependency>
       <groupId>se.fk.github.logging</groupId>
       <artifactId>fk-logging</artifactId>
-      <version>0.0.4</version>
+      <version>0.0.5</version>
     </dependency>
 
     <!-- Immutables -->
