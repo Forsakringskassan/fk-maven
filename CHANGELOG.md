@@ -2,6 +2,20 @@
 
 Changelog of fk-maven.
 
+## 1.10.0 (2025-10-24)
+
+### Features
+
+-  MDC loggning med SLF4J ([b7dcd](https://github.com/Forsakringskassan/fk-maven/commit/b7dcd882c52e6e2) Tomas Bjerre)  
+
+### Bug Fixes
+
+-  **deps**  update dependency org.osgi:org.osgi.annotation.bundle to v1.1.1 ([ba46c](https://github.com/Forsakringskassan/fk-maven/commit/ba46c2d9fa852e7) renovate[bot])  
+
+### Dependency updates
+
+- update dependency se.bjurr.violations:violations-maven-plugin to v3.1.1 ([94cf3](https://github.com/Forsakringskassan/fk-maven/commit/94cf387a5aecbe5) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.12.0 (#7) ([489af](https://github.com/Forsakringskassan/fk-maven/commit/489af046a045338) renovate[bot])  
 ## 1.9.1 (2025-10-23)
 
 ### Bug Fixes
