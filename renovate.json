@@ -2,6 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>Forsakringskassan/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["se.fk.maven:*"],
+      "enabled": false
+    }
   ]
 }
 
