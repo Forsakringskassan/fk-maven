@@ -20,6 +20,8 @@
     <immutables.version>2.11.6</immutables.version>
     <wiremock.version>1.5.1</wiremock.version>
     <quarkus.platform.version>3.28.4</quarkus.platform.version>
+    <maven-dependency-plugin.version>3.5.0</maven-dependency-plugin.version>
+    <fk-logging.version>0.1.0</fk-logging.version>
   </properties>
 
   <dependencyManagement>
@@ -67,7 +69,13 @@
     <dependency>
       <groupId>se.fk.github.logging</groupId>
       <artifactId>fk-logging</artifactId>
-      <version>0.0.5</version>
+      <version>${fk-logging.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>se.fk.github.logging</groupId>
+      <artifactId>fk-logging-archunit</artifactId>
+      <version>${fk-logging.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <!-- Immutables -->
@@ -82,6 +90,12 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.tngtech.archunit</groupId>
+      <artifactId>archunit-junit5</artifactId>
+      <version>1.4.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -147,8 +161,35 @@
           <systemPropertyVariables>
             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
             <maven.home>${maven.home}</maven.home>
+            <archunit.packageToScan>se.fk</archunit.packageToScan>
           </systemPropertyVariables>
         </configuration>
+      </plugin>
+
+      <!-- Archunit test cases -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${maven-dependency-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>unpack-parent-archunit-tests</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>process-test-classes</phase>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>se.fk.github.logging</groupId>
+                  <artifactId>fk-logging-archunit</artifactId>
+                  <version>${fk-logging.version}</version>
+                  <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
 
       <!-- Failsafe Plugin -->
