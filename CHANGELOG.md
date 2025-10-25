@@ -2,6 +2,16 @@
 
 Changelog of fk-maven.
 
+## 1.11.0 (2025-10-25)
+
+### Features
+
+-  log messaging ([45eb4](https://github.com/Forsakringskassan/fk-maven/commit/45eb4b9db8ccd45) Tomas Bjerre)  
+
+### Bug Fixes
+
+-  **deps**  update dependency org.osgi:org.osgi.annotation.bundle to v2 ([3e781](https://github.com/Forsakringskassan/fk-maven/commit/3e781ef5e13eaca) renovate[bot])  
+
 ## 1.10.1 (2025-10-24)
 
 ### Bug Fixes
