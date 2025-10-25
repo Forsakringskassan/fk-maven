@@ -20,7 +20,7 @@
     <immutables.version>2.11.6</immutables.version>
     <wiremock.version>1.5.1</wiremock.version>
     <quarkus.platform.version>3.28.4</quarkus.platform.version>
-    <maven-dependency-plugin.version>3.5.0</maven-dependency-plugin.version>
+    <maven-dependency-plugin.version>3.9.0</maven-dependency-plugin.version>
     <fk-logging.version>0.1.0</fk-logging.version>
   </properties>
 
