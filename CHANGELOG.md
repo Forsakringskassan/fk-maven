@@ -2,6 +2,16 @@
 
 Changelog of fk-maven.
 
+## 1.11.1 (2025-10-27)
+
+### Bug Fixes
+
+-  **deps**  update fk-logging.version to v0.3.0 ([2b627](https://github.com/Forsakringskassan/fk-maven/commit/2b6270304bfbab7) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.28.5 ([e4938](https://github.com/Forsakringskassan/fk-maven/commit/e49385d7a1f8b4e) renovate[bot])  
+
+### Dependency updates
+
+- update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.9.0 ([8f5cf](https://github.com/Forsakringskassan/fk-maven/commit/8f5cf4ecbfef740) renovate[bot])  
 ## 1.11.0 (2025-10-25)
 
 ### Features
