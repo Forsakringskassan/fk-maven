@@ -17,7 +17,7 @@
   <properties>
     <compiler-plugin.version>3.14.1</compiler-plugin.version>
     <maven.compiler.release>21</maven.compiler.release>
-    <immutables.version>2.11.6</immutables.version>
+    <immutables.version>2.11.7</immutables.version>
     <wiremock.version>1.5.1</wiremock.version>
     <quarkus.platform.version>3.29.3</quarkus.platform.version>
     <maven-dependency-plugin.version>3.9.0</maven-dependency-plugin.version>
