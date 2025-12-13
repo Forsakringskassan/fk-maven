@@ -67,7 +67,7 @@
     <eclipse.version>2.10</eclipse.version>
     <javadoc.version>3.12.0</javadoc.version>
     <source.plugin.version>3.4.0</source.plugin.version>
-    <release.plugin.version>3.3.0</release.plugin.version>
+    <release.plugin.version>3.3.1</release.plugin.version>
     <spotbugs.version>4.9.8.2</spotbugs.version>
     <pmd.version>3.28.0</pmd.version>
     <checkstyle.version>3.6.0</checkstyle.version>
