@@ -2,6 +2,66 @@
 
 Changelog of fk-maven.
 
+## 1.12.0 (2026-03-09)
+
+### Features
+
+-  Lägger till regel-anpassad pom (#14) ([42032](https://github.com/Forsakringskassan/fk-maven/commit/4203295e99c9855) Ulf Slunga)  
+
+### Bug Fixes
+
+-  **deps**  update quarkus.platform.version to v3.32.2 ([79718](https://github.com/Forsakringskassan/fk-maven/commit/797186e3db9891a) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.32.1 ([15cc3](https://github.com/Forsakringskassan/fk-maven/commit/15cc3ceb6f7c25b) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.31.4 ([b3e6a](https://github.com/Forsakringskassan/fk-maven/commit/b3e6a1eb74e3d1f) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.31.3 ([af5d5](https://github.com/Forsakringskassan/fk-maven/commit/af5d506a79a4a19) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.31.2 ([b3fdf](https://github.com/Forsakringskassan/fk-maven/commit/b3fdf17251aef6c) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.31.1 ([0d31f](https://github.com/Forsakringskassan/fk-maven/commit/0d31f36518f4b49) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.8 ([46aaa](https://github.com/Forsakringskassan/fk-maven/commit/46aaa481c0d518c) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.7 ([66616](https://github.com/Forsakringskassan/fk-maven/commit/66616398b5de98f) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.6 ([c76f2](https://github.com/Forsakringskassan/fk-maven/commit/c76f2015c05e96d) renovate[bot])  
+-  **deps**  update dependency org.immutables:value to v2.12.1 ([5783c](https://github.com/Forsakringskassan/fk-maven/commit/5783c80377cfc67) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.5 ([525ae](https://github.com/Forsakringskassan/fk-maven/commit/525ae1fb8daf254) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.4 ([238be](https://github.com/Forsakringskassan/fk-maven/commit/238beefb6b94f93) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.3 ([cbdac](https://github.com/Forsakringskassan/fk-maven/commit/cbdac5be69977f7) renovate[bot])  
+-  **deps**  update dependency org.immutables:value to v2.12.0 ([b82dc](https://github.com/Forsakringskassan/fk-maven/commit/b82dc36a61ddad6) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.2 ([1d72b](https://github.com/Forsakringskassan/fk-maven/commit/1d72bae77d25f01) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.30.1 ([b7c42](https://github.com/Forsakringskassan/fk-maven/commit/b7c4202955ebbec) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.29.4 ([c9356](https://github.com/Forsakringskassan/fk-maven/commit/c9356059cd35230) renovate[bot])  
+-  **deps**  update dependency org.immutables:value to v2.11.7 ([b4896](https://github.com/Forsakringskassan/fk-maven/commit/b4896bbdd6eb43b) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.29.3 ([f370b](https://github.com/Forsakringskassan/fk-maven/commit/f370b3dec72baec) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.29.2 ([3ebc9](https://github.com/Forsakringskassan/fk-maven/commit/3ebc97b6d02c13b) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.29.1 ([8e635](https://github.com/Forsakringskassan/fk-maven/commit/8e635767ec3ad98) renovate[bot])  
+-  **deps**  update quarkus.platform.version to v3.29.0 ([cdcf8](https://github.com/Forsakringskassan/fk-maven/commit/cdcf8558966f1ca) renovate[bot])  
+
+### Dependency updates
+
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.3.0 ([4f774](https://github.com/Forsakringskassan/fk-maven/commit/4f774008c56125a) renovate[bot])  
+- update surefire.version to v3.5.5 ([3cded](https://github.com/Forsakringskassan/fk-maven/commit/3cdedd90e3c58db) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.10.0 ([d6432](https://github.com/Forsakringskassan/fk-maven/commit/d64324dc7d2a52d) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.10.0 ([5ea63](https://github.com/Forsakringskassan/fk-maven/commit/5ea630775f633d4) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.15.0 ([bf8d1](https://github.com/Forsakringskassan/fk-maven/commit/bf8d107c59a82c4) renovate[bot])  
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.2.1 ([97d8a](https://github.com/Forsakringskassan/fk-maven/commit/97d8ad70b485ef8) renovate[bot])  
+- update dependency org.assertj:assertj-core to v3.27.7 ([28e2c](https://github.com/Forsakringskassan/fk-maven/commit/28e2ca24ad5e03a) renovate[bot])  
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.2.0 ([ce11b](https://github.com/Forsakringskassan/fk-maven/commit/ce11bfabd2c47b9) renovate[bot])  
+- update dependency io.quarkiverse.wiremock:quarkus-wiremock to v1.5.3 ([cf8a2](https://github.com/Forsakringskassan/fk-maven/commit/cf8a2c83b21d739) renovate[bot])  
+- update dependency org.apache.maven.plugins:maven-source-plugin to v3.4.0 ([39ca5](https://github.com/Forsakringskassan/fk-maven/commit/39ca5243adf7d01) renovate[bot])  
+- update dependency com.github.spotbugs:spotbugs-maven-plugin to v4.9.8.2 ([763c7](https://github.com/Forsakringskassan/fk-maven/commit/763c78f0c89c9cc) renovate[bot])  
+- update dependency io.quarkiverse.wiremock:quarkus-wiremock to v1.5.2 ([3a29e](https://github.com/Forsakringskassan/fk-maven/commit/3a29e3d1c59c1d2) renovate[bot])  
+- update dependency com.diffplug.spotless:spotless-maven-plugin to v3.1.0 ([7de56](https://github.com/Forsakringskassan/fk-maven/commit/7de562e80b6588c) renovate[bot])  
+### Other changes
+
+**Remove @tomasbjerre from CODEOWNERS**
+
+* Co-authored-by: tomasbjerre &lt;439571+tomasbjerre@users.noreply.github.com&gt; 
+
+[029a4](https://github.com/Forsakringskassan/fk-maven/commit/029a43d3ef526d7) copilot-swe-agent[bot] *2026-03-01 07:53:03*
+
+**Initial plan**
+
+
+[b5d14](https://github.com/Forsakringskassan/fk-maven/commit/b5d140d9f0b4641) copilot-swe-agent[bot] *2026-03-01 07:52:01*
+
+
 ## 1.11.1 (2025-10-27)
 
 ### Bug Fixes
