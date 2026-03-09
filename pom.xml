@@ -32,6 +32,7 @@
     <module>fk-code-standard-java</module>
     <module>fk-maven-parent</module>
     <module>fk-maven-quarkus-parent</module>
+    <module>fk-maven-rimfrost-regel-parent</module>
   </modules>
 
   <scm>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>se.fk.maven</groupId>
+    <artifactId>fk-maven-quarkus-parent</artifactId>
+    <version>1.6.4-SNAPSHOT</version>
+    <relativePath>../fk-maven-quarkus-parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>fk-maven-rimfrost-regel-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>fk-maven-rimfrost-regel-parent</name>
+  <description>FK Maven Rimfrost regel Parent POM</description>
+
+  <properties>
+    <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
+    <quarkus.build.skip>true</quarkus.build.skip>
+    <version.org.kie.kogito>999-SNAPSHOT</version.org.kie.kogito>
+    <violations.maxViolations>0</violations.maxViolations>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.quarkus.platform</groupId>
+        <artifactId>quarkus-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <!-- Quarkus Platform -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-messaging-kafka</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
+    </dependency>
+
+    <!-- Config files management -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>2.5</version>
+    </dependency>
+
+    <!-- Code standard -->
+    <dependency>
+      <groupId>se.fk.maven</groupId>
+      <artifactId>fk-code-standard-java</artifactId>
+      <version>1.11.1</version>
+    </dependency>
+
+    <!-- Test dependencies -->
+    <dependency>
+      <groupId>org.wiremock</groupId>
+      <artifactId>wiremock</artifactId>
+      <version>3.13.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5-mockito</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.smallrye.reactive</groupId>
+      <artifactId>smallrye-reactive-messaging-in-memory</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.wiremock</groupId>
+      <artifactId>quarkus-wiremock</artifactId>
+      <version>${wiremock.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- APIs -->
+    <dependency>
+      <groupId>se.fk.github.jaxrsclientfactory</groupId>
+      <artifactId>jaxrs-client-factory</artifactId>
+      <version>1.3.0</version>
+    </dependency>
+
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>native</id>
+      <activation>
+        <property>
+          <name>native</name>
+        </property>
+      </activation>
+      <properties>
+        <skipITs>false</skipITs>
+        <quarkus.native.enabled>true</quarkus.native.enabled>
+      </properties>
+    </profile>
+  </profiles>
+</project>
